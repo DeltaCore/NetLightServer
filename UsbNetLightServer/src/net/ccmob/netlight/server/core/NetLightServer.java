@@ -41,6 +41,7 @@ public class NetLightServer {
 		this.setHttpCommandHandler(new ArrayList<NetCommandHandler>());
 		new ColorHandlers.ColorHandler();
 		new ColorHandlers.CurrentColorHandler();
+		/* Put here your custom command instance creations */
 		this.setHttpHandler(new HTTPInputHandler(Integer.valueOf(this.getConfig().getValue("port"))));
 	}
 	
