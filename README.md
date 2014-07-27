@@ -102,7 +102,7 @@ This is the basic structure of a command class.
 
 Let's say you want to create a command wich turns of the stripes and want to use this pattern:
 
-> :net:usbled:turn:off
+> :net:usbled:turnoff
 
 Now you have to build the regex for that.
 For this one it's pretty simple. just use that as regex: 
@@ -115,7 +115,7 @@ For this one it's pretty simple. just use that as regex:
     public class MyOwnCommand extends NetCommandHandler {
 
         public MyOwnCommand(){
-            super(":net:usbled:turn:off")
+            super(":net:usbled:turnoff")
         }
 
         @Override
@@ -162,7 +162,7 @@ Our class:
     public class MyOwnColorCommand extends NetCommandHandler {
 
         public MyOwnCommand(){
-            super(":net:usbled:turn:on:([A-Za-z]{1,})") 
+            super(":net:usbled:turnon:([A-Za-z]{1,})") 
         }
 
         @Override
@@ -186,7 +186,7 @@ Our class:
 Now the explanation:
 
 The new regex: 
->:net:usbled:turn:on:([A-Za-z]{1,})
+>:net:usbled:turnon:([A-Za-z]{1,})
 
 The part '([A-Za-z]{1,})' is very important. It says that the matcher will give us the string back (indicated by the '()').
 And the string can only contains a string wich has at least one letter till infinite ('{1,}')
@@ -211,15 +211,18 @@ For example :
 
 Thats it. The class NetCommandHandler wich is the parent class for your command will register the command for you into the httpCommandHandler ArrayList in the NetLightServer class.
 
+How to use this in your app or browser
+======================================
 
+Just call this url in your browser or app :
 
+> http://serverip:configport/command
 
+For example the rgb command:
 
+> http://localhost:8080/net:usbled:cmd:*:1:2:255:255:255:1
 
+Or the example command:
 
-
-
-
-
-
+> http://localhost:8080/net:usbled:turnoff or http://localhost:8080/net:usbled:turnon:blue
 
