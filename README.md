@@ -183,8 +183,10 @@ Our class:
 
 Now the explanation:
 
-The new regex: :net:usbled:turn:on:([A-Za-z]{1,})
-this part '([A-Za-z]{1,})' is very important. It says that the matcher will give us the string back (indicated by the '()').
+The new regex: 
+>:net:usbled:turn:on:([A-Za-z]{1,})
+
+The part '([A-Za-z]{1,})' is very important. It says that the matcher will give us the string back (indicated by the '()').
 And the string can only contains a string wich has at least one letter till infinite ('{1,}')
 More important, in the string, the only allowed characters are A-Z and a-z.
 
