@@ -48,7 +48,9 @@ You are no able to modify the project to fit your needs.
 
 If you just want to use the project as is, clone the two repos and export the project as runnable jar file.
 Make sure that you export the required libraries into the generated jar file.
-Then, you can just start the file with : java -jar NetLightServer.jar, or what ever you named you file.
+Then, you can just start the file with : 
+>java -jar NetLightServer.jar
+or what ever you named you file.
 
 The internals
 =============
