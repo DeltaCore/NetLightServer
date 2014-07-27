@@ -195,6 +195,11 @@ More important, in the string, the only allowed characters are A-Z and a-z.
 Now get the string (wich should be a color) -> String color = matcher.group(1);
 wich get's the first string it finds and it should store.
 
+Another thing, if you want to sent your application a response, use 
+
+    this.sendBack("yourresponse\n");
+    this.sendBacl("and more")
+
 Thats it. If you have problems, write me an email to [marcel(at)ccmob(dot)net](mailto:marcel@ccmob.net).
 
 How to register custom commands
