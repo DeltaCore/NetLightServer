@@ -225,9 +225,9 @@ Just call this url in your browser or app :
 
 For example the rgb command:
 
-> http://localhost:8080/net:usbled:cmd:*:1:2:255:255:255:1
+> http://localhost:8080/:net:usbled:cmd:*:1:2:255:255:255:1
 
 Or the example command:
 
-> http://localhost:8080/net:usbled:turnoff or http://localhost:8080/net:usbled:turnon:blue
+> http://localhost:8080/:net:usbled:turnoff or http://localhost:8080/net:usbled:turnon:blue
 
