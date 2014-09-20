@@ -143,6 +143,7 @@ public class HTTPInputHandler implements CallBack {
 			this.sendString(construct_http_header());
 			String line = reader.readLine();
 			if (line.toUpperCase().startsWith("GET")) {
+				//print("Got input: " + line);
 				this.handleInput(line);
 			}
 			this.getClientOutputStream().close();
@@ -154,6 +155,7 @@ public class HTTPInputHandler implements CallBack {
 	private void handleInput(String line) {
 		String[] parts = line.split(" ");
 		String cmd = parts[1].substring(1);
+		//print("CMD: " + cmd);
 		Pattern p;
 		Matcher m;
 		boolean flag = false;
