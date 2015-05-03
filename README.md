@@ -35,7 +35,7 @@ Dependencies
 ============
 
 This project is based on my [UsbLedLib](https://github.com/DeltaCore/UsbLedLib).
-If you want to extend the program, i will create w way to use custom commands and so on,
+If you want to extend the program, i will create a way to use custom commands and so on,
 like a jar file put in a specific location wich get's loaded.
 
 Install
@@ -44,7 +44,7 @@ Install
 If you want to use the project in eclipse, first clone this repo : [UsbLedLib](https://github.com/DeltaCore/UsbLedLib)
 After that, clone this repo : [NetLightServer](https://github.com/DeltaCore/NetLightServer)
 
-You are no able to modify the project to fit your needs.
+You are now able to modify the project to fit your needs.
 
 If you just want to use the project as is, clone the two repos and export the project as runnable jar file.
 Make sure that you export the required libraries into the generated jar file.
